@@ -31,11 +31,11 @@ const user = {
 function Navbar() {
   return (
     <div>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="bg-gray-800 relative z-10 h-full">
         {({ open }) => (
           <>
-            <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border-white z-20">
-              <div className="flex items-center justify-between h-16">
+            <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border-white z-20 relative">
+              <div className="flex items-center justify-between h-16 relative">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <img
@@ -130,7 +130,7 @@ function Navbar() {
               </div>
             </div>
 
-            <Disclosure.Panel className="md:hidden z-20 h-full">
+            <Disclosure.Panel className="md:hidden z-20 h-full relative">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {navigation.map((item) => (
                   <Disclosure.Button
