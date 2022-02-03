@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
 function product() {
+  
   return (
     <div className="min-h-full bg-gray-300">
       <Head>
